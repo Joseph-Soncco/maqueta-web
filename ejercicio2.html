@@ -1,16 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 2</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
 <body>
-  <header>
-
+  <header><!-- Atributo data-bs-theme="dark" genera text de contrate -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div>
+      </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ONE PIECE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/saitama.jpg" class="d-block w-100" alt="Calvo con capa">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/saitama-2.jpg" class="d-block w-100" alt="Calvo con capa">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/saitama-3.jpg" class="d-block w-100" alt="Calvo con capa">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </header>
-  <section></section>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <section class="container">
+    <!-- Welcome -->
+    <section>
+      <div class="row mt-3 mb-3">
+        <div class="cold-md-12">
+          <h2>Welcome to Modern Business</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <h5 class="card-header">Special title treatment</h5>
+            <div class="card-body">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <h5 class="card-header">Special title treatment</h5>
+            <div class="card-body">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <h5 class="card-header">Special title treatment</h5>
+            <div class="card-body">
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portafolio -->
+    <section>
+      <div class="row mt-3 mb-3">
+        <div class="cold-md-12">
+          <h2>Portafolio Heading</h2>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="/img/saitama (1)700x400.jpg" class="card-img-top img-fluid" alt="Calvo con capa">
+            <div class="card-body">
+              <h5 class="card-title text-primary">One Project</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/img/saitama (2)700x400.jpg" class="card-img-top img-fluid" alt="Calvo con capa">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Two project</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="/img/saitama (3)700x400.jpg" class="card-img-top img-fluid" alt="Calvo con capa">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Three Project</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Modern-->
+    <section>
+      <div class="row mt-3 mb-3">
+        <div class="cold-md-12">
+          <h2>Modern Business Features</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>The modern Business template by Strat Bootstrap includes: </p>
+          <ul>
+            <li>Bootstrap v4</li>
+            <li>Font Awesome</li>
+            <li>Working contact form with validation</li>
+            <li>Unstyled page elements for easy customization</li>
+          </ul>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum quaerat laborum maiores molestias quas quidem
+            quis assumenda vel odio ea corrupti quam dolorum, doloremque repellat suscipit asperiores, eveniet aliquam
+            enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse temporibus neque harum culpa repellendus voluptatem, odit rerum quisquam cupiditate animi, sed totam ratione magnam, ipsum suscipit iste mollitia laudantium. Esse.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="/img/saitama (1)700x450.jpg" class="img-fluid" alt="Calvo con capa">
+        </div>
+      </div>
+    </section>
+    <!-- Ultimo boton -->
+     <section>
+      <div class="border-top my-4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ipsa! Aliquid hic molestiae numquam doloribus aliquam id expedita magnam reprehenderit deserunt pariatur? Ex quae tenetur facilis aliquid, itaque aut odit!</p>
+      </div>
+     </section>
+  </section>
+  <footer class="bg-dark mt-3">
+    <div class="pt-3 pb-3 text-light">
+      <span class="text-center d-block">Copyright Your Website 2018</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
