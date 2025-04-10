@@ -1,25 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ejercicio 1</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
+
 <body>
   <!-- HTML SEMANTICO -->
   <header>
-    <nav>
-
+    <!-- Atributo data-bs-theme="dark" genera text de contrate -->
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <div>  
+      </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">ONE PIECE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </nav>
   </header>
-  <section>
+  <!-- Un seccion puede contener a otras secciones -->
+  <!-- Dentro de una seccion puede tener articulos  -->
+  <!-- Un articulo NO puede contener un seccion -->
+  <section class="container">
+    <!-- mt = margin top / mb = margin-bottom -->
+    <section class="mt-3 mb-3">
+      <span class="h1">Page Heading</span>
+      <span class="h3">Secondary Text</span>
+    </section>
     <section>
-      
+      <div class="row"> <!-- row = fila (x12)-->
+        <div class="col-md-7">
+          <!-- img-fluid = imagen responsive -->
+          <img src="/img/one-piece.jpg" class="img-fluid" alt="Imagen del rey pirata y sus amigos">
+        </div>
+        <div class="col-md-5">
+          <h4>Project Description</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est esse a debitis obcaecati reiciendis asperiores nihil maxime quidem! Explicabo laboriosam architecto libero ut id perferendis eum ullam voluptas reiciendis culpa?</p>
+          <h4>Project Details</h4>
+          <ul>
+            <li>Lorem Ipsum</li>
+            <li>Dolor Sit amet</li>
+            <li>Consectetur</li>
+            <li>Adipisicing Elit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="row mt-3 mb-3">
+        <div class="cold-md-12">
+          <h3>Related Projects</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <img src="/img/one-piece-pequeño.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3">
+          <img src="/img/one-piece-pequeño.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3">
+          <img src="/img/one-piece-pequeño.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-3">
+          <img src="/img/one-piece-pequeño.jpg" class="img-fluid" alt="">
+        </div>
+      </div>
     </section>
   </section>
-  <footer>
-
+  <footer class="bg-dark mt-3">
+    <div class="pt-3 pb-3 text-light">
+      <span class="text-center d-block">Todos los derechos reservados</span>
+    </div>
   </footer>
+  <!-- BOOTSTRAP 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
